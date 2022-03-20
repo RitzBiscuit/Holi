@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Contact</title>
+    <style>
+        body{
+            background-image: url("https://wallpaperaccess.com/full/161427.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: monospace;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        nav{
+            height: 80px;
+            margin: 20px;
+            background-color: rgb(255, 255, 255);
+            padding: 5px;
+        }
+        .navimg{
+            margin-left: 30px;
+            height: 70px;
+        }
+        .ltcsj{
+            position: absolute;
+            font-size: 20px;
+            color: black;
+            top: 30px;
+            left: 230px;
+        }
+        .navlink1{
+            color: black;
+            font-size: 20px;
+            margin-left: 1020px;
+        }
+        .navlink{
+            color: black;
+            font-size: 20px;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .box{
+            position: relative;
+            margin: 30px;
+        }
+        .container{
+            position: relative;
+            width: 400px;
+            min-height: 400px;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255,255,255,0.5);
+            border-right: 1px solid rgba(255,255,255,0.2);
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        .form{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 40px;
+        }
+        .form h2{
+            position: relative;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+        }
+        .form h2::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 100px;
+            height: 4px;
+            background: white;
+        }
+        .form .inputBox{
+            width: 100%;
+            margin-top: 20px;
+        }
+        .form .inputBox input::placeholder{
+            color: white;
+        }
+        .form .inputBox input{
+            width: 100%;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            border-radius: 35px;
+            border: 1px solid rgba(255,255,255,0.5);
+            border-right: 1px solid rgba(255,255,255,0.2);
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            font-size: 16px;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .form .inputBox input[type="submit"]{
+            background: white;
+            color: #666;
+            max-width: 100px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .forget{
+            margin-top: 5px;
+            color: white;
+        }
+        .forget a{
+            color: white;
+            font-weight: 600;
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img class="navimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1L73K29Q_BE_OfXl6vJbn6wz1yVd0__Qc1SBCo7wYlH0hTWku8VfTWhHPd2cLVYGwu70&usqp=CAU" alt="">
+        <b><p class="ltcsj">let the colour<br> shower joy</p></b>
+        <a href="HoliHome.html" class="navlink1">Home</a>
+        <a href="HoliHistory.html" class="navlink">History</a>
+        <a href="HoliContact.html" class="navlink">Contact</a>
+    </nav>
+    <section>
+        <div class="box">
+            <div class="container">
+                <div class="form">
+                    <h2>Contact Form</h2>
+                    <form action="">
+                        <div class="inputBox">
+                            <input type="email" placeholder="Email" name="" id="">
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" placeholder="Password" name="" id="">
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" value="Send">
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="container">
+                <div class="form">
+                    <h2>Sign Up Form</h2>
+                    <form action="">
+                        <div class="inputBox">
+                            <input type="email" placeholder="Email" name="" id="">
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" placeholder="Password" name="" id="">
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" value="Sign Up">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="container">
+                <div class="form">
+                    <h2>Login Form</h2>
+                    <form action="">
+                        <div class="inputBox">
+                            <input type="email" placeholder="Email" name="" id="">
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" placeholder="Password" name="" id="">
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" value="Login">
+                        </div>
+                        <p class="forget">
+                            Forgot Password? <a href="">Click Here</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

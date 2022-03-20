@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>History of Holi</title>
+    <style>
+        body{
+            background-image: url("https://wallpaperaccess.com/full/161427.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: monospace;
+        }
+        nav{
+            height: 80px;
+            margin: 20px;
+            background-color: rgb(255, 255, 255);
+            padding: 5px;
+        }
+        .navimg{
+            margin-left: 30px;
+            height: 70px;
+        }
+        .ltcsj{
+            position: absolute;
+            font-size: 20px;
+            color: black;
+            top: 30px;
+            left: 230px;
+        }
+        .navlink1{
+            color: black;
+            font-size: 20px;
+            margin-left: 1020px;
+        }
+        .navlink{
+            color: black;
+            font-size: 20px;
+        }
+        .container1{
+            display: flex;
+            position: absolute;
+            left: -20px;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+        .container1 .card1{
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            height: 540px;
+            width: 415px;
+            transition: 0.3s ease-in-out;
+            display: flex;
+            flex-direction: row;
+            box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+        }
+        .container1 .card1:hover{
+            width: 1000px;
+            z-index: 20;
+        }
+        .container1 .card1 .content1{
+            position: relative;
+            padding: 10px 15px;
+            color: black;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+        .container1 .card1:hover .content1{
+            visibility: visible;
+            opacity: 1;
+        }
+        .container1 .card1 .imgBx1{
+            position: relative;
+        }
+        .img1{
+            height: 500px;
+            margin-right: 30px;
+        }
+        .container2{
+            display: flex;
+            position: absolute;
+            left: 600px;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+        .container2 .card2{
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            height: 540px;
+            width: 705px;
+            transition: 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+        }
+        .container2 .card2:hover{
+            height: 1000px;
+            z-index: 20;
+        }
+        .container2 .card2 .content2{
+            position: relative;
+            padding: 10px 15px;
+            color: black;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+        .container2 .card2:hover .content2{
+            visibility: visible;
+            opacity: 1;
+        }
+        .container2 .card2 .imgBx2{
+            position: relative;
+        }
+        .img2{
+            height: 498px;
+            margin-right: 30px;
+        }
+        .container3{
+            display: flex;
+            position: absolute;
+            left: -20px;
+            top: 700px;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+        .container3 .card3{
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            height: 340px;
+            width: 575px;
+            transition: 0.3s ease-in-out;
+            display: flex;
+            flex-direction: row;
+            box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+        }
+        .container3 .card3:hover{
+            width: 1000px;
+            height: 540px;
+            z-index: 20;
+        }
+        .container3 .card3 .content3{
+            position: relative;
+            padding: 10px 15px;
+            color: black;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+        .container3 .card3:hover .content3{
+            visibility: visible;
+            opacity: 1;
+        }
+        .container3 .card3 .imgBx3{
+            position: relative;
+        }
+        .img3{
+            height: 300px;
+            margin-right: 30px;
+        }
+        .vishnutextnormal{
+            position: relative;
+            width: 360px;
+        }
+        .vishnutext{
+            background-color: white;
+            position: relative;
+            top: 30px;
+            left: -578px;
+            width: 943px;
+        }
+        .container4{
+            display: flex;
+            position: absolute;
+            left: 600px;
+            top: 800px;
+            flex-wrap: wrap;
+            padding: 30px;
+            transition: 0.3s ease-in-out;
+        }
+        .container4 .card4{
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            height: 540px;
+            width: 800px;
+            transition: 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+        }
+        .container4 .card4:hover{
+            height: 790px;
+            width: 1070px;
+            z-index: 20;
+        }
+        .container4:hover{
+            left: 270px;
+        }
+        .container4:hover .imgBx4 .img4{
+            left: 270px;
+        }
+        .container4 .card4 .content4{
+            position: relative;
+            padding: 10px 15px;
+            color: black;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+        .container4 .card4:hover .content4{
+            visibility: visible;
+            opacity: 1;
+        }
+        .container4 .card4 .imgBx4{
+            position: relative;
+        }
+        .img4{
+            position: relative;
+            height: 500px;
+            margin-right: 30px;
+            border: 2px solid black;
+        }
+        .hpptext{
+            background-color: white;
+            position: relative;
+            top: -510px;
+            left: 0px;
+            width: 200px;
+        }
+        .hpptextnormal{
+            background-color: white;
+            position: relative;
+            top: -490px;
+            left: 0px;
+            width: 1013px;
+        }
+        .container5{
+            display: flex;
+            position: absolute;
+            left: -20px;
+            top: 1200px;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+        .container5 .card5{
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            height: 560px;
+            width: 440px;
+            transition: 0.3s ease-in-out;
+            display: flex;
+            flex-direction: row;
+            box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+        }
+        .container5 .card5:hover{
+            width: 1400px;
+            z-index: 20;
+        }
+        .container5 .card5 .content5{
+            position: relative;
+            padding: 10px 15px;
+            color: black;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+        .container5 .card5:hover .content5{
+            visibility: visible;
+            opacity: 1;
+        }
+        .container5 .card5 .imgBx5{
+            position: relative;
+        }
+        .img5{
+            height: 520px;
+            margin-right: 30px;
+        }
+        .container6{
+            display: flex;
+            position: absolute;
+            left: 600px;
+            top: 1400px;
+            flex-wrap: wrap;
+            padding: 30px;
+            transition: 0.3s ease-in-out;
+        }
+        .container6 .card6{
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            height: 470px;
+            width: 800px;
+            transition: 0.3s ease-in-out;
+            display: flex;
+            flex-direction: row;
+            box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+        }
+        .container6 .card6:hover{
+            width: 1400px;
+            height: 665px;
+            z-index: 20;
+        }
+        .container6:hover{
+            left: 0px;
+        }
+        .container6:hover .imgBx6 .img6{
+            left: 0px;
+        }
+        .container6 .card6 .content6{
+            position: relative;
+            padding: 10px 15px;
+            color: black;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+        .container6 .card6:hover .content6{
+            visibility: visible;
+            opacity: 1;
+        }
+        .container6 .card6 .imgBx6{
+            position: relative;
+        }
+        .img6{
+            position: relative;
+            height: 430px;
+            margin-right: 30px;
+            border: 2px solid black;
+        }
+        .hiktext{
+            position: absolute;
+            background-color: white;
+            top: 445px;
+            left: -790px;
+            width: 1350px;
+        }
+        
+        .container7{
+            display: flex;
+            position: absolute;
+            top: 2000px;
+            left: 280px;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+        .container7 .card7{
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            height: 450px;
+            width: 755px;
+            transition: 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+        }
+        .container7 .card7:hover{
+            height: 940px;
+            z-index: 20;
+        }
+        .container7 .card7 .content7{
+            position: relative;
+            padding: 10px 15px;
+            color: black;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+        .container7 .card7:hover .content7{
+            visibility: visible;
+            opacity: 1;
+        }
+        .container7 .card7 .imgBx7{
+            position: relative;
+        }
+        .img7{
+            height: 400px;
+            position: relative;
+            margin-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img class="navimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1L73K29Q_BE_OfXl6vJbn6wz1yVd0__Qc1SBCo7wYlH0hTWku8VfTWhHPd2cLVYGwu70&usqp=CAU" alt="">
+        <b><p class="ltcsj">let the colour<br> shower joy</p></b>
+        <a href="HoliHome.html" class="navlink1">Home</a>
+        <a href="HoliHistory.html" class="navlink">History</a>
+        <a href="HoliContact.html" class="navlink">Contact</a>
+    </nav>
+    <div class="container1">
+        <div class="card1">
+            <div class="imgBx1">
+                <img src="https://miro.medium.com/max/734/1*RY8Onav8J8ArbsTBjWrpkA.jpeg" alt="" class="img1">
+            </div>
+            <div class="content1">
+                <h2>Hiranyakashipu</h2>
+                <h4>Once in India there was an evil king called Hiranyakashipu. 
+                    He was a wicked man: boastful, greedy and cruel. Everyone had to do exactly as he commanded. 
+                    He even told his people that he was a god so that they had to worship him too.
+                    He was granted a boon by Shiva that he could not be killed by human or animal or at day or night 
+                    as well as having unrivalled combat prowess, exceeding skill in the use of bow and other weapons 
+                    as well as the powers of all the gods, including Indra, Yama, Kubera, Sūrya, Agni, Vayu, Soma and Varuna. <br>
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="card2">
+            <div class="imgBx2">
+                <img src="https://www.templepurohit.com/wp-content/uploads/2015/07/Hiranyakashipu-Threatens-Prahlada-Narasimha-Avatar-of-Lord-Vishnu.jpg" alt="" class="img2">
+            </div>
+            <div class="content2">
+                <h2>Prahalad</h2>
+                <h4>
+                    This king had a son called Prahlad, who was as kind as his father was cruel. 
+                    He too believed that his father was a god. One day when Prahlad was walking 
+                    in the countryside he saw a woman on her knees. Her hands were clasped and 
+                    her head bowed. She was praying: ‘Lord Vishnu, who takes away fear. I 
+                    surrender to you, great lord.’ <br>
+                    Prahlad was angry. ‘Woman, why do you pray to the Lord Vishnu when you 
+                    know that your king is god.’
+                    <br>
+                    The woman turned her face to Prahlad. There were tears on her cheeks. ‘My 
+                    kittens have fallen into the well,’ she said. ‘I am praying that they 
+                    will be saved.’
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="card3">
+            <div class="imgBx3">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/ee24b834b514f83f6fe00c3e1cecb7a14d18154439136a50a031c590a4e604f7._RI_.jpg" alt="" class="img3">
+            </div>
+            <div class="content3">
+                <h2>Worshipping Vishnu</h2>
+                <h4 class="vishnutextnormal">As she spoke a tiny miaow sounded from the well. To Prahlad’s astonishment he saw a 
+                    little paw clinging to its edge. Gently the woman picked up the kitten and put 
+                    it down safely on the ground.
+                    <br>
+                </h4>
+                <div class="vishnutext">
+                    <h4>
+                        Then they heard another miaow, and another. One by one the kittens crawled out of 
+                        the well. ‘My prayer has been answered,’ the woman cried joyfully and fell to her knees.
+                        <br>
+                        As Prahlad made his way home, he thought about what had happened. 'My father 
+                        is not a god after all,' he thought. From this day forth I will worship Lord Vishnu.
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container4">
+        <div class="card4">
+            <div class="imgBx4">
+                <img src="https://www.ruchiskitchen.com/wp-content/uploads/2014/05/Prahlad2.jpg" alt="" class="img4">
+            </div>
+            <div class="content4">
+                <div class="hpptext">
+                    <h2>Hiranyakashipu punishes Prahalad</h2>
+                    <h4>
+                        When his father learnt this he was very angry. ‘My son disobeys me. He must be punished!’ 
+                        He called the guards. ‘Take my son and thrown him off the tallest cliff in the land!’
+                    </h4>
+                </div>
+                <h4 class="hpptextnormal">    
+                    So Prahlad was taken to a cliff and tossed over the edge. Down, down, Prahlad fell. 
+                    As he fell he prayed to Lord Vishnu to protect him. And the god heard him so that his 
+                    fall was gentle and he was not hurt.
+                    <br>
+                    When he discovered that the prince was unharmed the king was furious. How could 
+                    his son have survived such a fall? ‘Very well,’ he said. ‘Toss him into a nest 
+                    of snakes. Let us see how he manages to climb out of that one!’
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="container5">
+        <div class="card5">
+            <div class="imgBx5">
+                <img src="https://www.sharanagati.org/wp-content/uploads/2019/02/prahlada_tortured.jpg" alt="" class="img5">
+            </div>
+            <div class="content5">
+                <h2>Hiranyakashipu cannot hurt Prahalad</h2>
+                <h4>
+                    Prahlad was taken to the snake pit. How he trembled when he looked in and saw the hundreds of 
+                    snakes twisting below him. How thick their bodies were - as thick as a grown man’s arm. 
+                    As he was pushed in he prayed to his god. The snakes hissed and curled round Prahlad’s body, 
+                    but were unable to hurt him.
+                    <br><br>
+                    When he learnt that Prahlad was unharmed, the king became even more angry: ‘Put 
+                    him amongst a herd of elephants!’ he shouted. ‘But first taunt them so they become 
+                    angry and trample him.‘ He rubbed his hands gleefully. ‘This time, he will not escape,’ he chuckled.
+                    <br><br>
+                    As soon as they saw Prahlad, the elephants raised their trunks and trumpeted loudly. 
+                    Prahlad tried not to show his fear as they charged towards him. Again he prayed to his 
+                    god to protect him. And to the watchers’ astonishment, as soon as the elephants reached 
+                    Prahlad, they stopped still and lowered their trunks, nuzzling him gently.  
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="container6">
+        <div class="card6">
+            <div class="imgBx6">
+                <img class="img6" src="https://ichef.bbci.co.uk/images/ic/1280xn/p071l713.png" alt="">
+            </div>
+            <div class="content6">
+                <h2>Holika has a plan</h2>
+                <h4>
+                    ‘What am I to do?’ the king said to his sister that night, when the news of his son’s escape reached him. ‘How am I to get rid of him?’
+                    <br>
+                    The king’s sister, whose name was Holika, wanted to see Prahlad dead as much as he did.
+                    <br>
+                    ‘Leave it to me,’ she said to him. ‘I have an idea. In the morning I will build a giant bonfire and walk into it – and dare Prahlad to follow me.’
+                    <br>
+                    ‘You will be burnt alive,’ the king said, aghast.
+                </h4>
+                <div class="hiktext">
+                    <h4>
+                        ‘Not I,’ she smiled. ‘The flames cannot harm me. I have magic powers that will protect me.’
+                        <br>
+                        ‘Then that is indeed a good plan,’ smiled the king. At last he would be rid of his son.
+                        <br>
+                        In the morning, Holika ordered her servants to build a huge bonfire in front of the palace. 
+                        Men and women ran to and fro, gathering sticks. Then a burning torch was held to the sticks. 
+                        The sticks were very dry and the flames leapt up quickly. Soon a fire was burning merrily. 
+                        It was so hot and burned so fiercely that no one dared stand close to it.
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container7">
+        <div class="card7">
+            <div class="imgBx">
+                <img src="https://ichef.bbci.co.uk/images/ic/1280xn/p071l719.png" alt="" class="img7">
+            </div>
+            <div class="content7">
+                <h2>Good over Evil</h2>
+                <h4>
+                    And with that Holika marched into the flames. Her magic powers kept her from being harmed. 
+                    But now Lord Vishnu was watching over Prahlad, as he had done many times before. Praying to 
+                    his god, Prahlad followed her into the fire. As the flames grew higher, Lord Vishnu took away 
+                    Holika’s magic powers and granted them to Prahlad instead.
+                    <br>
+                    There was a sudden whoosh as the flames caught Holika. In a trice all that was left of her 
+                    was a few glowing embers. But Prahlad stood in the midst of the fire, unharmed by the roaring flames.
+                    <br>
+                    And to this day, at Holi time, fires are lit and as they look into the flickering flames 
+                    people remember the story of Holika and Prahlad and how good triumphs over evil.
+                </h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
